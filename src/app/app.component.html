@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,37 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <div style="text-align:center">
+        <img id="logo_fd" width="200px" src="assets/images/logo.png" />
+      </div>
+    </div>  
+  </div>
+
+  <!-- Menu de navigation -->
+  <div class="row mt-3">
+      <div class="offset-lg-2 col-lg-8 offset-lg-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav m-auto">
+                <a class="nav-item nav-link active" href="/calendrier">Calendrier <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Stocks</a>
+                <a class="nav-item nav-link" href="#">Désherbage / Fumure</a>
+                <a class="nav-item nav-link" href="#">Coût de traitement</a>
+                <a class="nav-item nav-link" href="#">Liste technique produits</a>
+                <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+              </div>
+            </div>
+          </nav>
+      </div>  
+  </div>        
+</div>
+<router-outlet></router-outlet>
 
