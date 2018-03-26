@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbModalModule  } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule, registerLocaleData  } from '@angular/common';
 import { CalendarModule } from 'angular-calendar';
 import { DragAndDropModule } from 'angular-draggable-droppable';
 import { DemoUtilsModule } from './calendrier/demo-utils/module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
@@ -23,11 +24,13 @@ registerLocaleData(localeFr);
   ],
   imports: [
     NgbModule.forRoot(),
+    NgbModalModule.forRoot(),
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     // Calendar
-    CommonModule,
     CalendarModule.forRoot(),
     DragAndDropModule,
     DemoUtilsModule
