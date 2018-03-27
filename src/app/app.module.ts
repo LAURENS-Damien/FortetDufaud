@@ -13,6 +13,7 @@ import { AuthentificationComponent } from './authentification/authentification.c
 import { CalendrierComponent } from './calendrier/calendrier.component';
 import { AppRoutingModule } from './app.routing.module';
 import localeFr from '@angular/common/locales/fr';
+import { DesherbageFumureComponent } from './desherbage-fumure/desherbage-fumure.component';
 
 registerLocaleData(localeFr);
 
@@ -20,7 +21,8 @@ registerLocaleData(localeFr);
   declarations: [
     AppComponent,
     AuthentificationComponent,
-    CalendrierComponent
+    CalendrierComponent,
+    DesherbageFumureComponent
   ],
   imports: [
     NgbModule.forRoot(),
