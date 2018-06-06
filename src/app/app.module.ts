@@ -14,6 +14,7 @@ import { CalendrierComponent } from './calendrier/calendrier.component';
 import { AppRoutingModule } from './app.routing.module';
 import localeFr from '@angular/common/locales/fr';
 import { DesherbageFumureComponent } from './desherbage-fumure/desherbage-fumure.component';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localeFr);
 
@@ -32,6 +33,7 @@ registerLocaleData(localeFr);
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     // Calendar
     CalendarModule.forRoot(),
     DragAndDropModule,
