@@ -6,7 +6,7 @@ import { CommonModule, registerLocaleData  } from '@angular/common';
 import { CalendarModule } from 'angular-calendar';
 import { DragAndDropModule } from 'angular-draggable-droppable';
 import { DemoUtilsModule } from './calendrier/demo-utils/module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
@@ -15,6 +15,9 @@ import { AppRoutingModule } from './app.routing.module';
 import localeFr from '@angular/common/locales/fr';
 import { DesherbageFumureComponent } from './desherbage-fumure/desherbage-fumure.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthentificationService } from './services/authentification.service';
+import { AuthentificationGuardService } from './services/authentification-guard.service';
+import { HeaderComponent } from './header/header.component';
 
 registerLocaleData(localeFr);
 
@@ -23,7 +26,8 @@ registerLocaleData(localeFr);
     AppComponent,
     AuthentificationComponent,
     CalendrierComponent,
-    DesherbageFumureComponent
+    DesherbageFumureComponent,
+    HeaderComponent
   ],
   imports: [
     NgbModule.forRoot(),
@@ -33,13 +37,17 @@ registerLocaleData(localeFr);
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     // Calendar
     CalendarModule.forRoot(),
     DragAndDropModule,
     DemoUtilsModule
   ],
-  providers: [],
+  providers: [
+    AuthentificationService,
+    AuthentificationGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
