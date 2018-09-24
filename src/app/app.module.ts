@@ -17,7 +17,7 @@ import { DesherbageFumureComponent } from './desherbage-fumure/desherbage-fumure
 import { HttpClientModule } from '@angular/common/http';
 import { AuthentificationService } from './services/authentification.service';
 import { AuthentificationGuardService } from './services/authentification-guard.service';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './structure/header/header.component';
 
 registerLocaleData(localeFr);
 
