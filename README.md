@@ -1,4 +1,5 @@
 # Récupérer le projet sur GitHub :
+Taper dans la console :
 git clone https://github.com/LAURENS-Damien/FortetDufaud.git
 
 # Installer Angular CLI
@@ -6,16 +7,6 @@ Pré-requis : installer Node.js
 
 Taper dans la console :
 npm install -g @angular/cli
-
-
-
-
-
-
-
-# Fortetdufaud
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
 
