@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy, ViewChild, TemplateRef  } from '@angular/core';
 import { CalendarEvent, CalendarEventTimesChangedEvent, CalendarDateFormatter,  CalendarEventAction, DAYS_OF_WEEK } from 'angular-calendar';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { addDays, differenceInDays, startOfDay, endOfDay, subDays, endOfMonth, addHours, isSameMonth, isSameDay } from 'date-fns';
 import { colors } from './demo-utils/colors';
 import { CustomDateFormatter } from './custom-date-formatter.provider';
